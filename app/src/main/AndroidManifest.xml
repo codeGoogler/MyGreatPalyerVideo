@@ -2,19 +2,86 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cv.yyh.com.mygreatviedeo">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
     <application
+        android:name="cv.yyh.com.mygreatviedeo.DemoApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name="cv.yyh.com.mygreatviedeo.PlayDirectlyActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="cv.yyh.com.mygreatviedeo.ListViewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cv.yyh.com.mygreatviedeo.ListViewNormalActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cv.yyh.com.mygreatviedeo.ListViewViewpagerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cv.yyh.com.mygreatviedeo.ListViewMultiHolderActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="cv.yyh.com.mygreatviedeo.ApiActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cv.yyh.com.mygreatviedeo.UISmallChangeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cv.yyh.com.mygreatviedeo.UIBigChangeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cv.yyh.com.mygreatviedeo.RecyclerViewNormalActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cv.yyh.com.mygreatviedeo.AutoTinyActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cv.yyh.com.mygreatviedeo.AutoTinyListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cv.yyh.com.mygreatviedeo.AutoTinyNormalActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cv.yyh.com.mygreatviedeo.WebViewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cv.yyh.com.mygreatviedeo.OrientationActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="landscape" />
+
     </application>
 
 </manifest>
